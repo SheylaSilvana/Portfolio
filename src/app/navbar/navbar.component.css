@@ -1,0 +1,44 @@
+.sidenav-container {
+    height: 100%;
+  }
+  
+  .sidenav {
+    width: 250px; /* Ajuste a largura conforme necessário */
+  }
+  
+  .mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 2; /* Assegure-se de que a toolbar esteja acima do conteúdo ao rolar a página */
+  }
+  
+  mat-nav-list a {
+    display: flex;
+    align-items: center;
+  }
+  
+  mat-icon {
+    padding-right: 10px;
+  }
+  
+  /* Adiciona uma transição suave para o hover */
+  mat-nav-list a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos responsivos para dispositivos móveis */
+  @media (max-width: 600px) {
+    .sidenav {
+      width: 100%;
+      position: fixed;
+      height: 100%;
+      z-index: 3; /* Certifique-se de que a sidenav fique acima de todo o conteúdo */
+      top: 0;
+      bottom: 0;
+    }
+  
+    .sidenav.opened {
+      width: 100%;
+    }
+  }
+  
